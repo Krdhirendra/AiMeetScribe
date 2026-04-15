@@ -1,2 +1,4 @@
-load_dotenv
+fastapi
+uvicorn
+python-dotenv
 langchain-groq
