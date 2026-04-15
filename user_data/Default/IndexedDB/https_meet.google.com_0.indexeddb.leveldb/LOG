@@ -1,0 +1,6 @@
+2026/04/15-22:29:09.352 4b20 Reusing MANIFEST C:\Users\krdhi\OneDrive\Desktop\MeetScribe\user_data\Default\IndexedDB\https_meet.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/15-22:29:09.354 4b20 Recovering log #12
+2026/04/15-22:29:09.367 4b20 Reusing old log C:\Users\krdhi\OneDrive\Desktop\MeetScribe\user_data\Default\IndexedDB\https_meet.google.com_0.indexeddb.leveldb/000012.log 
+2026/04/15-22:29:28.501 4b20 Level-0 table #16: started
+2026/04/15-22:29:28.517 4b20 Level-0 table #16: 3901180 bytes OK
+2026/04/15-22:29:28.519 4b20 Delete type=0 #12

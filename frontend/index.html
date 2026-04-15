@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetScribe</title>
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="glass-container">
+        <header>
+            <h1>MeetScribe ⚡</h1>
+            <p>Automated AI Google Meet Summarizer</p>
+        </header>
+
+        <section class="control-panel">
+            <div class="input-group">
+                <input type="text" id="meetUrl" placeholder="https://meet.google.com/xyz-abcd-efg" required />
+                <button id="deployBtn" onclick="deployBot()">Deploy Bot</button>
+            </div>
+            <div id="statusMessage" class="status-msg"></div>
+        </section>
+
+        <nav class="tabs">
+            <button class="tab active" onclick="switchTab('summary')">AI Summary</button>
+            <button class="tab" onclick="switchTab('transcript')">Raw Transcript</button>
+            <button class="tab action" onclick="fetchData()">Refresh ↺</button>
+        </nav>
+
+        <section class="viewer-panel">
+            <div id="summaryTab" class="tab-content active">
+                <div class="content-box glass-card" id="summaryBox">
+                    <div class="placeholder">Click Refresh to load the latest AI summary.</div>
+                </div>
+            </div>
+            
+            <div id="transcriptTab" class="tab-content">
+                <div class="content-box glass-card" id="transcriptBox">
+                    <div class="placeholder">Click Refresh to load the latest meeting transcript.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
